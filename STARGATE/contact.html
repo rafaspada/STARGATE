@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stargate</title>
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.png" />
+    <link rel="stylesheet" href="/css/styles.css" />
+    <script src="/js/javascript.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/8c42afde13.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="container-brands">
+            <a class="navbar-brand" href="/home.html">
+              <img src="/assets/logo.png" alt="Logo" width="70" height="70" />
+              <p>stargate</p>
+            </a>
+          </div>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="/home.html">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/earth.html">Terra</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/life.html">Vida</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="intro">
+        <h1>stargate.</h1>
+        <video class="video-bg" autoplay loop muted plays-inline>
+          <source src="/assets/contact.mp4" type="video/mp4" />
+        </video>
+      </div>
+    </header>
+
+    <main>
+      <section class="contact">
+        <h1>Deixe sua mensagem!</h1>
+        <form name="form">
+          <p>Nome:</p>
+          <input class="input-form" type="text" name="name"/>
+          <p>E-mail:</p>
+          <input class="input-form" type="email" name="email"/>
+          <p>Mensagem:</p>
+          <textarea class="input-form" name="message" id="message" cols="50" rows="3"></textarea>
+        </form>
+      </section>
+      <section class="rate">
+        <h2>Avalie o stargate para que possamos melhorar sua experiência!</h2>
+        <div class="rating">
+          <button class="star">
+            <i class="fa-regular fa-star" style="color: #ff9800"></i>
+          </button>
+          <button class="star">
+            <i class="fa-regular fa-star" style="color: #ff9800"></i>
+          </button>
+          <button class="star">
+            <i class="fa-regular fa-star" style="color: #ff9800"></i>
+          </button>
+          <button class="star">
+            <i class="fa-regular fa-star" style="color: #ff9800"></i>
+          </button>
+          <button class="star">
+            <i class="fa-regular fa-star" style="color: #ff9800"></i>
+          </button>
+        </div>
+        <p class="current-rating">0 de 5</p>
+      </section>
+      <input class="input-form-button" type="button" name="submit" value="Enviar" onclick="submitForm()">
+      <section class="table-information">
+        <table id="table" class="table" border="1">
+          <caption>Últimos Acessos:</caption>
+          <thead>
+            <th>Nome</th>
+            <th>Mensagem</th>
+            <th>Avaliação</th>
+            <tbody>
+            </tbody>
+          </thead>
+        </table>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>® 2023 stargate | Rafael Spada</p>
+      <p>All information provided by NASA</p>
+    </footer>
+  </body>
+</html>
